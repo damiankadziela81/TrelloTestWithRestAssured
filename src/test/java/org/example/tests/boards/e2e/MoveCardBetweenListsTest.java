@@ -4,7 +4,9 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.example.requests.board.CreateBoardRequest;
+import org.example.requests.board.DeleteBoardRequest;
 import org.example.requests.card.CreateCardRequest;
+import org.example.requests.card.UpdateCardRequest;
 import org.example.requests.list.CreateListRequest;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -89,5 +91,28 @@ class MoveCardBetweenListsTest {
         JsonPath json = response.jsonPath();
         Assertions.assertThat(json.getString("name")).isEqualTo(cardName);
         cardId = json.getString("id");
+    }
+
+    //{{url}}/cards/{{cardId}}?key={{key}}&token={{token}}&idList={{secondListId}}
+    @Test
+    @Order(5)
+    void moveCardToSecondListTest() {
+        Map<String, String> queryParams = new HashMap<>();
+        queryParams.put("idList", secondListId);
+
+        final Response response = UpdateCardRequest.updateCardRequest(queryParams, cardId);
+
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertThat(json.getString("name")).isEqualTo(cardName);
+        Assertions.assertThat(json.getString("idList")).isEqualTo(secondListId);
+    }
+
+    @Test
+    @Order(6)
+    void deleteBoardTest() {
+        final Response response = DeleteBoardRequest.deleteBoardRequest(boardId);
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
     }
 }

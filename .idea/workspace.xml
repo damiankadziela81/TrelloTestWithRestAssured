@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - possibility to add more query params">
+    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - switched from JUnit to AssertJ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateBoardTest.createBoard1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrelloTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.boards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.boards" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.CreateBoardTest" />
+      <option name="METHOD_NAME" value="createBoard1Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateBoardTest.createBoard2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrelloTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.boards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.boards" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.CreateBoardTest" />
+      <option name="METHOD_NAME" value="createBoard2Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateBoardTest.createBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrelloTestingWithRestAssured" />
       <extension name="coverage">
@@ -77,6 +110,8 @@
       <list>
         <item itemvalue="JUnit.CreateBoardTest" />
         <item itemvalue="JUnit.CreateBoardTest.createBoardTest" />
+        <item itemvalue="JUnit.CreateBoardTest.createBoard2Test" />
+        <item itemvalue="JUnit.CreateBoardTest.createBoard1Test" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688626656318</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor - switched from JUnit to AssertJ">
+      <created>1688628210058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688628210058</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +178,7 @@
     <MESSAGE value="Refactor - moved url, key and token to dedicated classes" />
     <MESSAGE value="Refactor - moved create and delete requests to designated classes, added specBuilder" />
     <MESSAGE value="Refactor - possibility to add more query params" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor - possibility to add more query params" />
+    <MESSAGE value="Refactor - switched from JUnit to AssertJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - switched from JUnit to AssertJ" />
   </component>
 </project>

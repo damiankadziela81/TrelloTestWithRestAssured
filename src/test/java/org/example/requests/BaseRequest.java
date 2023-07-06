@@ -16,9 +16,16 @@ public class BaseRequest {
         requestBuilder.setContentType(ContentType.JSON);
         requestBuilder.addQueryParam("key", TrelloSecrets.getKey());
         requestBuilder.addQueryParam("token", TrelloSecrets.getToken());
+        return requestBuilder.build();
+    }
+
+    public static RequestSpecification requestSetupWithLogs() {
+        requestBuilder = new RequestSpecBuilder();
+        requestBuilder.setContentType(ContentType.JSON);
+        requestBuilder.addQueryParam("key", TrelloSecrets.getKey());
+        requestBuilder.addQueryParam("token", TrelloSecrets.getToken());
         requestBuilder.addFilter(new RequestLoggingFilter());
         requestBuilder.addFilter(new ResponseLoggingFilter());
-
         return requestBuilder.build();
     }
 }

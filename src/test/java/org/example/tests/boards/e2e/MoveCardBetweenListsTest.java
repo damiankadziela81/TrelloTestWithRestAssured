@@ -5,27 +5,26 @@ import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.example.requests.board.CreateBoardRequest;
 import org.example.requests.list.CreateListRequest;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class MoveCardBetweenListsTest {
 
     private final String boardName = "Table for E2E test";
     private final String firstListName = "First list for E2E test";
     private final String secondListName = "Second list for E2E test";
-    private String boardId;
-    private String firstListId;
-    private String secondListId;
+    private static String boardId;
+    private static String firstListId;
+    private static String secondListId;
 
     @Test
-    void scenarioE2ETest() {
-        createNewBoardTest();
-        createFirstListTest();
-        createSecondListTest();
-    }
-
+    @Order(1)
     void createNewBoardTest() {
         Map<String, String> queryParams = new HashMap<>();
         queryParams.put("name", boardName);
@@ -40,6 +39,8 @@ class MoveCardBetweenListsTest {
     }
 
     //{{url}}/lists?name={{firstList}}&idBoard={{boardId}}&key={{key}}&token={{token}}
+    @Test
+    @Order(2)
     void createFirstListTest() {
         Map<String, String> queryParams = new HashMap<>();
         queryParams.put("name", firstListName);
@@ -54,6 +55,8 @@ class MoveCardBetweenListsTest {
         firstListId = json.getString("id");
     }
 
+    @Test
+    @Order(3)
     void createSecondListTest() {
         Map<String, String> queryParams = new HashMap<>();
         queryParams.put("name", secondListName);

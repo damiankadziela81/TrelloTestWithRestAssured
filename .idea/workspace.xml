@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Add E2E scenario for lists creation on the board" />
+    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - test order forced by annotations">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/card/CreateCardRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/TrelloUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/TrelloUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/e2e/MoveCardBetweenListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/e2e/MoveCardBetweenListsTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688637115057</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactor - test order forced by annotations">
+      <created>1688637438496</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688637438496</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +227,7 @@
     <MESSAGE value="Add logging filters for request and response" />
     <MESSAGE value="Add test parametrization" />
     <MESSAGE value="Add E2E scenario for lists creation on the board" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add E2E scenario for lists creation on the board" />
+    <MESSAGE value="Refactor - test order forced by annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - test order forced by annotations" />
   </component>
 </project>

@@ -7,6 +7,9 @@ import org.example.requests.board.DeleteBoardRequest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 class CreateBoardTest {
 
 
@@ -16,8 +19,11 @@ class CreateBoardTest {
     @Test
     void createBoardTest() {
 
+        Map<String, String> queryParams = new HashMap<>();
+        queryParams.put("name", boardName);
+
         // CREATE BOARD
-        final Response response = CreateBoardRequest.createBoardRequest(boardName);
+        final Response response = CreateBoardRequest.createBoardRequest(queryParams);
 
         Assertions.assertEquals(200, response.statusCode());
         Assertions.assertEquals(200, response.getStatusCode());

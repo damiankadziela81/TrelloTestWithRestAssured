@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Add- new /cards endpoint and request with new test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/card/UpdateCardRequest.java" afterDir="false" />
+    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Fix - typo in test method name">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/ReadBoardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/UpdateBoardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/e2e/CreatePutDeleteBoardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/e2e/MoveCardBetweenListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/e2e/MoveCardBetweenListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/requests/board/CreateBoardRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/CreateBoardRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MoveCardBetweenListsTest">
+  <component name="RunManager" selected="JUnit.CreatePutDeleteBoardTest">
     <configuration name="CreateBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrelloTestingWithRestAssured" />
       <extension name="coverage">
@@ -54,22 +56,6 @@
       <option name="PACKAGE_NAME" value="org.example.tests.boards" />
       <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.CreateBoardTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateBoardTest.createBoard2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrelloTestingWithRestAssured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.tests.boards.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.tests.boards" />
-      <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.CreateBoardTest" />
-      <option name="METHOD_NAME" value="createBoard2Test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +72,21 @@
       <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.CreateBoardTest" />
       <option name="METHOD_NAME" value="createBoardTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatePutDeleteBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrelloTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.boards.e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.boards.e2e" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.boards.e2e.CreatePutDeleteBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreatePutDeleteBoardTest" />
         <item itemvalue="JUnit.MoveCardBetweenListsTest" />
         <item itemvalue="JUnit.MoveCardBetweenListsTest.createNewBoardTest" />
         <item itemvalue="JUnit.CreateBoardTest" />
         <item itemvalue="JUnit.CreateBoardTest.createBoardTest" />
-        <item itemvalue="JUnit.CreateBoardTest.createBoard2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688638450079</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add - final tests for moving card to second list and deleting board">
+      <created>1688639806998</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688639806998</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix - typo in test method name">
+      <created>1688640126307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688640126307</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +250,8 @@
     <MESSAGE value="Add E2E scenario for lists creation on the board" />
     <MESSAGE value="Refactor - test order forced by annotations" />
     <MESSAGE value="Add- new /cards endpoint and request with new test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add- new /cards endpoint and request with new test" />
+    <MESSAGE value="Add - final tests for moving card to second list and deleting board" />
+    <MESSAGE value="Fix - typo in test method name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix - typo in test method name" />
   </component>
 </project>

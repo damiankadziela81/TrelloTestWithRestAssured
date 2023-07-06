@@ -8,14 +8,14 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class CreateBoardRequest {
+public class UpdateBoardRequest {
 
-    public static Response createBoardRequest(Map<String, String> queryParams) {
+    public static Response updateBoardRequest(Map<String, String> queryParams, String boardId) {
         return given()
                 .spec(BaseRequest.requestSetup())
                 .queryParams(queryParams)
                 .when()
-                .post(TrelloUrl.getBoardsUrl())
+                .put(TrelloUrl.getBoardUrl(boardId))
                 .then()
                 .extract()
                 .response();

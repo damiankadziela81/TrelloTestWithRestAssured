@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - moved create and delete requests to designated classes, added specBuilder">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/requests/board/CreateBoardRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/CreateBoardRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" afterDir="false" />
+    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - possibility to add more query params">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688626058143</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor - possibility to add more query params">
+      <created>1688626656318</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688626656318</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +135,7 @@
     <MESSAGE value="Init Commit" />
     <MESSAGE value="Refactor - moved url, key and token to dedicated classes" />
     <MESSAGE value="Refactor - moved create and delete requests to designated classes, added specBuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor - moved create and delete requests to designated classes, added specBuilder" />
+    <MESSAGE value="Refactor - possibility to add more query params" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - possibility to add more query params" />
   </component>
 </project>

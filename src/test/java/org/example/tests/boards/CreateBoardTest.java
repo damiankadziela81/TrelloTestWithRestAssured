@@ -2,9 +2,9 @@ package org.example.tests.boards;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.assertj.core.api.Assertions;
 import org.example.requests.board.CreateBoardRequest;
 import org.example.requests.board.DeleteBoardRequest;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
@@ -25,15 +25,14 @@ class CreateBoardTest {
         // CREATE BOARD
         final Response response = CreateBoardRequest.createBoardRequest(queryParams);
 
-        Assertions.assertEquals(200, response.statusCode());
-        Assertions.assertEquals(200, response.getStatusCode());
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
 
         JsonPath json = response.jsonPath();
-        Assertions.assertEquals(boardName, json.getString("name"));
+        Assertions.assertThat(json.getString("name")).isEqualTo(boardName);
         boardId = json.getString("id");
 
         // DELETE BOARD
         final Response responseAfterDelete = DeleteBoardRequest.deleteBoardRequest(boardId);
-        Assertions.assertEquals(200, responseAfterDelete.statusCode());
+        Assertions.assertThat(responseAfterDelete.statusCode()).isEqualTo(200);
     }
 }

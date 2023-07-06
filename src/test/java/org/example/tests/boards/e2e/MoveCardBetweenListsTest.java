@@ -79,7 +79,7 @@ class MoveCardBetweenListsTest {
     //{{url}}/cards?idList={{firstListId}}&name={{cardName}}&key={{key}}&token={{token}}
     @Test
     @Order(4)
-    void createCardOnFistListTest() {
+    void createCardOnFirstListTest() {
         Map<String, String> queryParams = new HashMap<>();
         queryParams.put("name", cardName);
         queryParams.put("idList", firstListId);

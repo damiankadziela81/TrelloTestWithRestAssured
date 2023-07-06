@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Init Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/secrets/TrelloSecrets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/url/TrelloUrl.java" afterDir="false" />
+    <list default="true" id="ea0b064a-6a91-4ec3-9af5-7d9975095d51" name="Changes" comment="Refactor - moved url, key and token to dedicated classes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/BaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/CreateBoardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/board/DeleteBoardRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/boards/CreateBoardTest.java" afterDir="false" />
     </list>
@@ -48,7 +50,7 @@
       <module name="TrelloTestingWithRestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.tests.boards.*" />
+          <option name="PATTERN" value="org.example.requests.board.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,7 +65,7 @@
       <module name="TrelloTestingWithRestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.tests.boards.*" />
+          <option name="PATTERN" value="org.example.requests.board.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688554739771</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor - moved url, key and token to dedicated classes">
+      <created>1688624641387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688624641387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+    <MESSAGE value="Refactor - moved url, key and token to dedicated classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - moved url, key and token to dedicated classes" />
   </component>
 </project>
